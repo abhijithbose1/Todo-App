@@ -1,0 +1,32 @@
+.add-todo-container {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.add-todo-container input {
+    flex: 1;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-left: 15px;
+    font-weight: 500;
+    background: #152431;
+    border: 1px solid rgba(143, 168, 193, 0.5);
+}
+input::placeholder {
+    color: #8fa8c1;
+}
+.add-todo-container button {
+    width: 95px;
+    margin-left: 8px;
+    border-radius: 4px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    border: 0;
+    background: #0c5488;
+}

@@ -1,0 +1,21 @@
+.todo-element-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    height: 70px;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 36px;
+    border-bottom: 1px dashed rgba(143, 168, 193, 0.3);
+}
+.buttons-container button{
+    background: #152431;
+    border: 0;
+    padding-left: 11px;
+}
+.buttons-container button img{
+    background: #152431;
+    background-size: contain;
+    background-position: center;
+}
+   

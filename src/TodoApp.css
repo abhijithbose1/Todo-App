@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #8FA8C1;
+}
+.app-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background: #1f1f1f;
+    align-items: center;          /*! to be un commented when completed */
+}
+.todo-main-container h1{
+    padding-top: 27px;
+    padding-bottom: 36px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    font-family:  sans-serif;
+    text-align: center;
+}
+.todo-main-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 612px;
+    width: 500px;
+    /* padding: 0 50px; */
+    /* border: 1px solid black; */
+    box-shadow: 15px 15px 1px 1px rgba(0, 0, 0, 0.307);
+    border-radius: 6px;
+    background: #152431;
+}
