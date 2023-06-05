@@ -33,3 +33,8 @@
     border-radius: 6px;
     background: #152431;
 }
+.todo-inner-container{
+    flex: 1;
+    overflow: auto;
+    margin-bottom: 15px;
+}

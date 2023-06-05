@@ -1,12 +1,12 @@
 import React from "react";
 import "./TodoElement.css";
 
-export const TodoElement = () => {
+export const TodoElement = ({ data ,editButtonClick}) => {
     return (
         <div className="todo-element-container">
-            <p>This is a Todo item</p>
+            <p>{data}</p>
             <div className="buttons-container">
-                <button className="edit-todo-button">
+                <button className="edit-todo-button" onClick={editButtonClick}>
                     <img src="/assets/editbutton.png" alt="" />
                 </button>
                 <button className="delete-todo-button">
