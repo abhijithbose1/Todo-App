@@ -30,7 +30,17 @@
     border: 0;
     background: #0c5488;
 }
+.edit-todo-container button:hover {
+    background: #038cee;
+    color: white;
+    cursor: pointer;
+}
 #cancel-button {
     color: #0c5488;
     background: #8fa8c1;
+}
+#cancel-button:hover {
+    color: #06416b;
+    background: rgb(190, 190, 240);
+    cursor: pointer;
 }

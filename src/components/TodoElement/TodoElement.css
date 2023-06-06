@@ -6,23 +6,30 @@
     padding-top: 10px;
     padding-bottom: 10px;
     min-height: 70px;
-    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     padding-right: 36px;
     border-bottom: 1px dashed rgba(143, 168, 193, 0.3);
 }
-.todo-element-container p{
+.todo-element-container p {
     width: 300px;
     word-wrap: break-word;
-    /* overflow: scroll; */
 }
-.buttons-container button{
+.todo-element-container p:hover {
+    cursor: pointer
+}
+.buttons-container button {
     background: #152431;
     border: 0;
     padding-left: 11px;
 }
-.buttons-container button img{
-    background: #152431;
+.buttons-container button:hover {
+    cursor: pointer;
+}
+.buttons-container button img {
     background-size: contain;
     background-position: center;
+    filter: brightness(.6);
 }
-   
+.buttons-container button img:hover {
+    filter: brightness(1);
+}

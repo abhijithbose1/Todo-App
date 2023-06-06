@@ -31,3 +31,8 @@ input::placeholder {
     border: 0;
     background: #0c5488;
 }
+.add-todo-container button:hover {
+    background:#038cee;
+    color: white;
+    cursor: pointer;
+}
