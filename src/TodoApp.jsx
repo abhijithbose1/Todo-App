@@ -14,9 +14,11 @@ function TodoApp() {
         setTodoList(event.target.value);
     };
     const addButtonClick = () => {
+        if(todoList!==""){
         setAddTodoList([...addTodoList, { id: count, complete:false, edit: false, content: todoList }]);
         setCount(count + 1);
         setTodoList("");
+        }
     };
 
     const todoComplete = (todoId) => {
