@@ -14,18 +14,18 @@ function TodoApp() {
         setTodoList(event.target.value);
     };
     const addButtonClick = () => {
-        if(todoList!==""){
-        setAddTodoList([...addTodoList, { id: count, complete:false, edit: false, content: todoList }]);
-        setCount(count + 1);
-        setTodoList("");
+        if (todoList !== "") {
+            setAddTodoList([...addTodoList, { id: count, complete: false, edit: false, content: todoList }]);
+            setCount(count + 1);
+            setTodoList("");
         }
     };
 
     const todoComplete = (todoId) => {
-        setAddTodoList((prevTodo)=>
-            prevTodo.map((todo)=>{
-                if(todo.id===todoId){
-                    return {...todo, complete: !todo.complete};
+        setAddTodoList((prevTodo) =>
+            prevTodo.map((todo) => {
+                if (todo.id === todoId) {
+                    return { ...todo, complete: !todo.complete };
                 }
                 return todo;
             })
@@ -38,7 +38,7 @@ function TodoApp() {
                 if (todo.id === currentTodo.id) {
                     return { ...todo, edit: !todo.edit };
                 }
-                return todo;
+                return { ...todo, edit: false };
             })
         );
         setEditTodoList(currentTodo.content);
@@ -66,7 +66,7 @@ function TodoApp() {
     const saveButtonClick = (todoId) => {
         setAddTodoList((prevTodo) =>
             prevTodo.map((todo) => {
-                if (todo.id === todoId && editTodoList!="") {
+                if (todo.id === todoId && editTodoList != "") {
                     return { ...todo, edit: !todo.edit, content: editTodoList };
                 }
                 return todo;
