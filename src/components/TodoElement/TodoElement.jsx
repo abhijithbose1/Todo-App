@@ -3,7 +3,7 @@ import "./TodoElement.css";
 
 export const TodoElement = ({ data, editButtonClick, deleteButtonClick, todoComplete }) => {
     const handleEditClick = () => {
-        editButtonClick(data.id); //!since we had to pass a unique id to differentiate editTodo component.
+        editButtonClick(data); //!since we had to pass a unique id to differentiate editTodo component.
     };
 
     const handleDeleteClick = () => {

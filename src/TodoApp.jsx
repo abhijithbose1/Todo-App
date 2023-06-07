@@ -30,15 +30,16 @@ function TodoApp() {
         );
     };
 
-    const editButtonClick = (todoId) => {
+    const editButtonClick = (currentTodo) => {
         setAddTodoList((prevTodo) =>
             prevTodo.map((todo) => {
-                if (todo.id === todoId) {
+                if (todo.id === currentTodo.id) {
                     return { ...todo, edit: !todo.edit };
                 }
                 return todo;
             })
         );
+        setEditTodoList(currentTodo.content);
     };
 
     const deleteButtonClick = (todoId) => {
@@ -63,7 +64,7 @@ function TodoApp() {
     const saveButtonClick = (todoId) => {
         setAddTodoList((prevTodo) =>
             prevTodo.map((todo) => {
-                if (todo.id === todoId) {
+                if (todo.id === todoId && editTodoList!="") {
                     return { ...todo, edit: !todo.edit, content: editTodoList };
                 }
                 return todo;
